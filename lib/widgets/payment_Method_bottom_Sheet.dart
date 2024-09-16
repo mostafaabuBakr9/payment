@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:payment/widgets/custom_button.dart';
+import 'package:payment/widgets/custom_button_bloc_consumer.dart';
 import 'package:payment/widgets/payment_methods.dart';
 
 class Paymentmethodbottomsheet extends StatelessWidget {
@@ -7,12 +7,16 @@ class Paymentmethodbottomsheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return const Padding(
       padding: EdgeInsets.all(15),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [PaymentMethods(), CustomButton(text: 'Continue')],
+        children: [
+          PaymentMethods(),
+          CustomButtonBlocConsumer(),
+        ],
       ),
     );
   }
 }
+

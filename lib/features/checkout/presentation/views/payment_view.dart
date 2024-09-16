@@ -7,8 +7,8 @@ class PaymentView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: const PreferredSize(
+    return const Scaffold(
+        appBar: PreferredSize(
             preferredSize: Size.fromHeight(60),
             child: CustomAppBar(text: 'Payment Details')),
         body: PaymentDetailsViewBody());

@@ -8,10 +8,10 @@ class ThankYouView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
+      appBar: const PreferredSize(
           preferredSize: Size.fromHeight(60), child: CustomAppBar(text: '')),
       body: Transform.translate(
-          offset: Offset(0, -20), child: ThankYouViewBody()),
+          offset: const Offset(0, -20), child: const ThankYouViewBody()),
     );
   }
 }
